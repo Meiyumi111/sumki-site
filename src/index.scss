@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  display: flow-root;
+  font-family: 'Inter', system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #ffffff;
+  //background: linear-gradient(90deg, #4b0202c2, #5c1003e8, #5f0202);
+  --background-page: #6d6d6df6;
+  --background-color: #ffffff;
+  --background-card: #f3f3f343;
+  --background-drawer: #cecece;
+  --color: #0c0c0c;
+  --color-border: #313131;
+  --color-shadow: #000000;
+}
+
+
+
+.page {
+  margin: 0 auto;
+  min-height: calc(100vh - 80px);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 1600px;
+  background-color: var(--background-color);
+  color: var(--color);
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+
+  &:hover {
+    transition: 1s;
+    transform: scale(1.05);
+  }
+
+  &:not(:hover) {
+    transition: 1s;
+  }
+
+  &__delete-img {
+    width: 18px;
+    height: 18px;
+  }
+}

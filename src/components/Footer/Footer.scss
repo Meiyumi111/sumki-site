@@ -1,0 +1,24 @@
+.footer {
+  margin: 0;
+  margin-left: 647px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  
+
+  p {
+    background: black;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin: 0 auto;
+  }
+}
